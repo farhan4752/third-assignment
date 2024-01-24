@@ -23,16 +23,38 @@
     .manrope {
       font-family: "Manrope", sans-serif;
     }
+
+    .junior_programmer_bg {
+      background: linear-gradient(#00000091, #000000bd), url('./Images/pic1.png');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .teenager_bg {
+      background: linear-gradient(#00000091, #000000bd), url('./Images/pic2.png');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .professional_bg {
+      background: linear-gradient(#00000091, #000000bd), url('./Images/pic3.png');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
   </style>
+
 </head>
 
 <body class="manrope">
-  <header>
+  <header class="max-sm:w-[90%] lg:container mx-auto">
     <!-- nav section -->
     <nav>
-      <div class="flex justify-between gap-16 items-center my-5">
+      <div class="flex gap-16 items-center py-5">
 
-        <div class="flex justify-center items-center gap-5">
+        <div class="flex justify-center lg:justify-start items-center gap-5 w-full">
           <div>
             <img class="w-10 lg:hidden" src="./Images/nav icon.png" alt="">
           </div>
@@ -46,8 +68,8 @@
         </div>
 
 
-        <div>
-          <ul class="hidden lg:flex gap-7 font-normal text-[#707070 ]">
+        <div class="w-full hidden lg:block">
+          <ul class=" lg:flex gap-7 font-normal text-[#707070 ]">
             <li class="text-[#FF4240]"><a href=""></a>Home</li>
             <li><a href=""></a>Services</li>
             <li><a href=""></a>Cases</li>
@@ -56,14 +78,14 @@
           </ul>
         </div>
 
-        <div class="flex items-center gap-5">
+        <div class="flex items-center gap-5 w-full lg:justify-end">
 
           <div>
             <img src="./Images/search-icon.png" alt="">
           </div>
 
           <div>
-            <button class="bg-red-500 text-white font-extrabold px-6 py-3 rounded-lg">
+            <button class="bg-red-500 text-white font-extrabold px-3 py-2 rounded-lg">
               Get Ticket
             </button>
           </div>
@@ -73,55 +95,45 @@
     </nav>
 
     <!-- banner section -->
-    <div class="carousel rounded-2xl">
-      <div id="slide1" class="carousel-item relative w-full">
-        <img src="./Images/slider 1.png" class="w-full" />
-        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide4" class="btn btn-circle">❮</a>
-          <a href="#slide2" class="btn btn-circle">❯</a>
+    <div class="relative">
+      <div class="lg:h-[550px] h-[300px] carousel rounded-2xl">
+        <div id="slide1" class="carousel-item relative w-full h-full">
+          <img src="./Images/slider 1.png" class="w-full h-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
         </div>
-      </div>
-      <div id="slide2" class="carousel-item relative w-full">
-        <img src="./Images/slider 2.jpg" class="w-full" />
-        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide1" class="btn btn-circle">❮</a>
-          <a href="#slide3" class="btn btn-circle">❯</a>
+        <div id="slide2" class="carousel-item relative">
+          <img src="./Images/slider 2.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
         </div>
-      </div>
-      <div id="slide3" class="carousel-item relative w-full">
-        <img src="./Images/slider 3.jpg" class="w-full" />
-        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide2" class="btn btn-circle">❮</a>
-          <a href="#slide4" class="btn btn-circle">❯</a>
-        </div>
-      </div>
-      <div id="slide4" class="carousel-item relative w-full">
-        <img src="./Images/slider 4.jpg" class="w-full" />
-        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide3" class="btn btn-circle">❮</a>
-          <a href="#slide1" class="btn btn-circle">❯</a>
-        </div>
-      </div>
-    </div>
 
-    <!-- badge section -->
-    <div class="bg-[#131318] p-5 rounded-lg mt-2">
-      <h1 class="text-white text-xl font-extrabold">
-        Strength Training For Hockey Players
-      </h1>
-      <br />
+      </div>
 
-      <p class="text-base-300 text-[16px] font-medium">
-        Hockey is undoubtedly a demanding sport, both mentally and physically. Whether you’re an aspiring hockey player
-        or a veteran of the game, knowing the proper regimes for weight training for hockey is vital. So what is the
-        best way to weight train for hockey?
-      </p>
+      <!-- badge section -->
+      <div class="bg-[#131318] p-5 rounded-lg mt-2 max-sm:w-full lg:absolute lg:bottom-4 lg:max-w-[500px] right-4">
+        <h1 class="text-white text-xl font-extrabold">
+          Strength Training For Hockey Players
+        </h1>
+        <br />
+
+        <p class="text-base-300 text-[16px] font-medium">
+          Hockey is undoubtedly a demanding sport, both mentally and physically. Whether you’re an aspiring hockey
+          player
+          or a veteran of the game, knowing the proper regimes for weight training for hockey is vital. So what is the
+          best way to weight train for hockey?
+        </p>
+      </div>
     </div>
   </header>
 
-  <main>
+  <main class="container mx-auto">
     <!-- professional hockey section -->
-    <div class="text-center mt-8">
+    <div class="text-center mt-8 px-5">
       <h1 class="text-black text-2xl mb-6 font-extrabold">
         Professional Hockey's Club
       </h1>
@@ -133,7 +145,7 @@
     </div>
 
     <!--   progress bar section  -->
-    <div class="text-center space-y-10 lg:space-y-0 my-10 lg:flex">
+    <div class="text-center space-y-10 lg:space-y-0 my-10 px-5 lg:flex">
       <div>
         <div class="radial-progress text-red-500 font-extrabold text-xl" style="--value: 87" role="progressbar">
           87%
@@ -190,49 +202,62 @@
     </div>
     <!-- program img section -->
     <div class="lg:grid grid-cols-2">
-      <div class="bg-[url('./Images/pic1.png')] bg-no-repeat bg-cover bg-center rounded-xl m-5 p-5 space-y-5">
-        <h1 class="my-5 font-extrabold text-white text-2xl">
-          Junior Program
-        </h1>
+      <div class=" junior_programmer_bg rounded-xl m-5 p-5 space-y-5 min-h-[338px]">
 
-        <p class="text-white text-[16px] font-medium">
-          For the first time ever, we are revealing the exact same training programs that have produced some of the
-          strongest, in-shape junior, and pro hockey players in our country.
-        </p>
+        <div class="lg:px-14 mt-20">
+          <h1 class="my-5 font-extrabold text-white text-2xl">
+            Junior Program
+          </h1>
 
-        <button class="bg-red-500 text-white font-extrabold p-3 rounded-lg">
-          Register Now
-        </button>
+          <p class="text-white lg:text-xl font-medium mb-10">
+            For the first time ever, we are revealing the exact same training programs that have produced some of the
+            strongest, in-shape junior, and pro hockey players in our country.
+          </p>
+
+          <button class="bg-red-500 text-white font-extrabold p-3 rounded-lg">
+            Register Now
+          </button>
+        </div>
+
+
       </div>
 
-      <div class="bg-[url('./Images/pic2.png')]  bg-no-repeat bg-cover bg-center rounded-xl m-5 p-5 space-y-5">
-        <h1 class="my-5 font-extrabold text-white text-2xl">
-          Teenager Program
-        </h1>
+      <div class="teenager_bg rounded-xl m-5 p-5 space-y-5 min-h-[338px]">
 
-        <p class="text-white text-[16px] font-medium">
-          The Teenager Program at the Professional Hockey Club is a pivotal initiative designed to cultivate the next
-          generation of hockey talent.
-        </p>
+        <div class="lg:px-14 mt-20">
+          <h1 class="my-5 font-extrabold text-white text-2xl">
+            Teenager Program
+          </h1>
 
-        <button class="bg-red-500 text-white font-extrabold p-3 rounded-lg">
-          Register Now
-        </button>
+          <p class="text-white lg:text-xl font-medium mb-10">
+            The Teenager Program at the Professional Hockey Club is a pivotal initiative designed to cultivate the next
+            generation of hockey talent.
+          </p>
+
+          <button class="bg-red-500 text-white font-extrabold p-3 rounded-lg">
+            Register Now
+          </button>
+        </div>
+
       </div>
-      <div
-        class="bg-[url('./Images/pic3.png')]  bg-no-repeat bg-cover bg-center rounded-xl m-5 p-5 space-y-5 lg: col-span-2">
-        <h1 class="my-5 font-extrabold text-white text-2xl">
-          Professional Program
-        </h1>
 
-        <p class="text-white text-[16px] font-medium">
-          The Professional Program at the Hockey Club sets the stage for excellence, offering elite athletes a
-          comprehensive framework for skill refinement, strategic development, and physical conditioning.
-        </p>
+      <div class="professional_bg rounded-xl m-5 p-5 space-y-5 lg: col-span-2 min-h-[450px]">
 
-        <button class="bg-red-500 text-white font-extrabold p-3 rounded-lg">
-          Register Now
-        </button>
+        <div class=" mt-20 lg:px-14 lg:mt-40 lg:w-[50%]">
+          <h1 class="my-5 font-extrabold text-white text-2xl">
+            Professional Program
+          </h1>
+
+          <p class="text-white lg:text-xl font-medium mb-10">
+            The Professional Program at the Hockey Club sets the stage for excellence, offering elite athletes a
+            comprehensive framework for skill refinement, strategic development, and physical conditioning.
+          </p>
+
+          <button class="bg-red-500 text-white font-extrabold p-3 rounded-lg">
+            Register Now
+          </button>
+        </div>
+
       </div>
     </div>
 
@@ -546,7 +571,7 @@
     </div>
 
     <!-- get in touch section -->
-    <div class="text-center my-8">
+    <div class="text-center my-8 px-5">
       <h1 class="text-black text-2xl mb-6 font-extrabold">Get In Touch</h1>
 
       <p class="text-black text-[16px] font-medium">
@@ -557,86 +582,96 @@
     </div>
 
     <div class="">
-      <!-- get in touch card section -->
-      <div class="">
-        <div class="border-[2px] rounded-2xl m-5 shadow-2xl">
-          <div class="bg-lime-200 space-y-3 p-5 m-5 rounded-2xl">
-            <img src="./Images/call.png" alt="" /> <br />
-            <p class="text-gray-500">Phone Number</p>
-            <h1 class="font-extrabold">(+62) 123-321-543</h1>
+
+      <div class="lg:grid grid-cols-3  ">
+        <!-- get in touch card section -->
+        <div class="lg:col-span-1">
+          <div class="border-[2px] rounded-2xl m-5 shadow-2xl">
+            <div class="bg-lime-200 space-y-3 p-5 m-5 rounded-2xl">
+              <img src="./Images/call.png" alt="" /> <br />
+              <p class="text-gray-500">Phone Number</p>
+              <h1 class="font-extrabold">(+62) 123-321-543</h1>
+            </div>
+
+            <div class="bg-amber-200 space-y-3 p-5 m-5 rounded-2xl">
+              <img src="./Images/mail.png" alt="" /> <br />
+              <p class="text-gray-500">Email</p>
+              <h1 class="font-extrabold">hockeys@support.com</h1>
+            </div>
+
+            <div class="bg-blue-100 space-y-3 p-5 m-5 rounded-2xl">
+              <img src="./Images/location.png" alt="" /> <br />
+              <p class="text-gray-500">Location</p>
+              <h1 class="font-extrabold">152/1 Mohakhali Wireless Gate</h1>
+            </div>
+          </div>
+        </div>
+
+        <!-- form section -->
+        <div class="lg:col-span-2">
+
+          <div class="lg:flex justify-between">
+            <div class="w-[100%]">
+              <label class="form-control m-5">
+                <div class="label font-bold text-xl">Your name</div>
+                <input type="text" placeholder="Enter your full name" class="input input-bordered  bg-gray-100" />
+              </label>
+            </div>
+
+            <div class="w-[100%]">
+              <label class="form-control m-5">
+                <div class="label font-bold text-xl">Your Email</div>
+                <input type="text" placeholder="Enter your email" class="input input-bordered bg-gray-100" />
+              </label>
+            </div>
           </div>
 
-          <div class="bg-amber-200 space-y-3 p-5 m-5 rounded-2xl">
-            <img src="./Images/mail.png" alt="" /> <br />
-            <p class="text-gray-500">Email</p>
-            <h1 class="font-extrabold">hockeys@support.com</h1>
+          <div class="lg:flex justify-between">
+            <div class="w-[100%]">
+              <label class="form-control m-5">
+                <div class="label font-bold text-xl">Subject</div>
+                <input type="text" placeholder="Enter your subject" class="input input-bordered bg-gray-100" />
+              </label>
+            </div>
+
+            <div class="w-[100%]">
+              <label class="form-control m-5">
+                <div class="label font-bold text-xl">Phone Number</div>
+                <input type="text" placeholder="Enter your phone number" class="input input-bordered bg-gray-100" />
+              </label>
+            </div>
           </div>
 
-          <div class="bg-blue-100 space-y-3 p-5 m-5 rounded-2xl">
-            <img src="./Images/location.png" alt="" /> <br />
-            <p class="text-gray-500">Location</p>
-            <h1 class="font-extrabold">152/1 Mohakhali Wireless Gate</h1>
+          <div class="">
+            <label class="form-control m-5 ">
+              <div class="label font-bold text-xl">Message</div>
+              <textarea class="textarea textarea-bordered h-56 w-full bg-gray-100"
+                placeholder="Write your message"></textarea>
+            </label>
           </div>
+
+          <div class="w-[96%] mx-auto">
+            <button class="bg-red-500 text-white font-extrabold p-3 rounded-lg w-full">
+              Send Message
+            </button>
+          </div>
+
         </div>
       </div>
 
-      <!-- form section -->
-      <div class="">
-
-        <div class="w-[100%]">
-          <label class="form-control m-5">
-            <div class="label font-bold text-xl">Your name</div>
-            <input type="text" placeholder="Enter your full name" class="input input-bordered  bg-gray-100" />
-          </label>
-        </div>
-
-        <div class="w-[100%]">
-          <label class="form-control m-5">
-            <div class="label font-bold text-xl">Your Email</div>
-            <input type="text" placeholder="Enter your email" class="input input-bordered bg-gray-100" />
-          </label>
-        </div>
-
-        <div class="w-[100%]">
-          <label class="form-control m-5">
-            <div class="label font-bold text-xl">Subject</div>
-            <input type="text" placeholder="Enter your subject" class="input input-bordered bg-gray-100" />
-          </label>
-        </div>
-
-        <div class="w-[100%]">
-          <label class="form-control m-5">
-            <div class="label font-bold text-xl">Phone Number</div>
-            <input type="text" placeholder="Enter your phone number" class="input input-bordered bg-gray-100" />
-          </label>
-        </div>
-
-        <div class="">
-          <label class="form-control m-5 ">
-            <div class="label font-bold text-xl">Message</div>
-            <textarea class="textarea textarea-bordered h-40 w-[100%] bg-gray-100"
-              placeholder="Write your message"></textarea>
-          </label>
-        </div>
-
-        <div class="">
-          <button class="bg-red-500 text-white font-extrabold p-3 rounded-lg w-[90%] mx-5 ">
-            Send Message
-          </button>
-        </div>
-
-      </div>
 
       <!-- social media section -->
-      <div class="bg-gray-200 w-full mb-5 rounded-lg">
-        <h1 class="font-extrabold text-2xl text-center my-5 pt-5">
-          Social Media
-        </h1>
-        <div class="flex gap-5 justify-center pb-5">
-          <div><i class="fa-brands fa-twitter"></i></div>
-          <div><i class="fa-brands fa-facebook"></i></div>
-          <div><i class="fa-brands fa-instagram"></i></div>
-          <div><i class="fa-brands fa-youtube"></i></div>
+      <div class="max-sm:w-[90%] lg:container mx-auto">
+        <div class="bg-gray-200 mb-5 rounded-lg lg:mx-5">
+          <h1 class="font-extrabold text-2xl text-center my-5 pt-5">
+            Social Media
+          </h1>
+          <div class="flex gap-5 justify-center pb-5">
+            <div><i class="fa-brands fa-twitter"></i></div>
+            <div><i class="fa-brands fa-facebook"></i></div>
+            <div><i class="fa-brands fa-instagram"></i></div>
+            <div><i class="fa-brands fa-youtube"></i></div>
+          </div>
         </div>
       </div>
     </div>
@@ -644,99 +679,102 @@
 
   </main>
 
-  <footer class="bg-black py-10 px-5 lg:flex justify-around p-20 gap-10">
-    <div class="mb-5 lg:flex-1 pl-16">
-      <h1 class="pl-10 lg:text-left text-white font-extrabold text-2xl">
-        Get In Touch
-      </h1>
-
-
-
-      <div class="flex gap-3  lg:justify-start">
-        <div><img src="./Images/mailbox.png" alt="" /></div>
+  <footer class="bg-black">
+    <div class="py-10 px-5 lg:flex justify-around gap-10 container mx-auto">
+      <div class="max-sm:mb-5 w-full max-sm:flex justify-center">
         <div>
-          <p class="text-white font-medium text-center lg:text-left">
-            hockeys@support.com
-          </p>
+          <h1 class="lg:text-left text-white font-extrabold text-2xl">
+            Get In Touch
+          </h1>
+          <div class="flex gap-3  lg:justify-start">
+            <div><img src="./Images/mailbox.png" alt="" /></div>
+            <div>
+              <p class="text-white font-medium text-center lg:text-left">
+                hockeys@support.com
+              </p>
 
+            </div>
+          </div>
+
+          <div class="flex gap-3 lg:justify-start">
+            <div><img src="./Images/phone.png" alt="" /></div>
+            <div>
+              <p class="text-white font-medium text-center lg:text-left">
+                (+62) 123-321-543
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-5  lg:justify-start">
+            <div><i class="fa-brands fa-square-whatsapp  text-red-700 text-xl"></i></div>
+            <div>
+              <p class="text-white font-medium text-center lg:text-left">
+                +8801832416733
+              </p>
+
+            </div>
+          </div>
+
+          <div class="flex gap-5  lg:justify-start">
+            <div><i class="fa-solid fa-location-dot text-red-700 text-xl"></i></div>
+            <div>
+              <p class="text-white font-medium text-center lg:text-left">
+                152/1 Mohakhali Wireless Gate
+              </p>
+
+            </div>
+          </div>
         </div>
       </div>
+      <hr>
 
-      <div class="flex gap-3 lg:justify-start">
-        <div><img src="./Images/phone.png" alt="" /></div>
-        <div>
-          <p class="text-white font-medium text-center lg:text-left">
-            (+62) 123-321-543
-          </p>
-        </div>
-      </div>
+      <div class="flex max-sm:justify-center justify-between gap-10 w-full">
+        <div class="mb-5">
+          <h1 class="text-center lg:text-left text-white font-extrabold text-2xl">
+            Company
+          </h1>
 
-      <div class="flex gap-5  lg:justify-start">
-        <div><i class="fa-brands fa-square-whatsapp  text-red-700 text-xl"></i></div>
-        <div>
-          <p class="text-white font-medium text-center lg:text-left">
-            +8801832416733
-          </p>
-
-        </div>
-      </div>
-
-      <div class="flex gap-5  lg:justify-start">
-        <div><i class="fa-solid fa-location-dot text-red-700 text-xl"></i></div>
-        <div>
-          <p class="text-white font-medium text-center lg:text-left">
-            152/1 Mohakhali Wireless Gate
-          </p>
+          <ul class="text-gray-400 font-medium text-center lg:text-left">
+            <li>About Us</li>
+            <li>Leadership</li>
+            <li>Careers</li>
+            <li>News & Article</li>
+            <li>Legal Notice</li>
+          </ul>
 
         </div>
-      </div>
-    </div>
-    <hr>
 
-    <div class="flex justify-center gap-10">
-      <div class="mb-5 lg:flex-1">
-        <h1 class="text-center lg:text-left text-white font-extrabold text-2xl">
-          Company
-        </h1>
+        <div class="mb-5">
+          <h1 class="text-center lg:text-left text-white font-extrabold text-2xl">
+            Support
+          </h1>
 
-        <ul class="text-gray-400 font-medium text-center lg:text-left">
-          <li>About Us</li>
-          <li>Leadership</li>
-          <li>Careers</li>
-          <li>News & Article</li>
-          <li>Legal Notice</li>
-        </ul>
+          <ul class="text-gray-400 font-medium text-center lg:text-left">
+            <li>Help Center</li>
+            <li>FAQ</li>
+            <li>Medical Aid</li>
+            <li>Ticket Support</li>
+            <li>Contact US</li>
+          </ul>
+        </div>
 
       </div>
 
-      <div class="mb-5 lg:flex-1">
-        <h1 class="text-center lg:text-left text-white font-extrabold text-2xl">
-          Support
-        </h1>
+      <div class="pb-5 w-full lg:flex lg:justify-end">
+        <div>
+          <h1 class="text-center lg:text-left text-white font-extrabold text-2xl">
+            Services
+          </h1>
 
-        <ul class="text-gray-400 font-medium text-center lg:text-left">
-          <li>Help Center</li>
-          <li>FAQ</li>
-          <li>Medical Aid</li>
-          <li>Ticket Support</li>
-          <li>Contact US</li>
-        </ul>
+          <ul class="text-gray-400 font-medium text-center lg:text-left">
+            <li>Academy</li>
+            <li>Group Lesson</li>
+            <li>Private Lesson</li>
+            <li>Hockey's for Kid</li>
+            <li>Hockey's for Adult</li>
+          </ul>
+        </div>
       </div>
-
-    </div>
-
-    <div class="pb-5 lg:flex-1">
-      <h1 class="text-center lg:text-left text-white font-extrabold text-2xl">
-        Services
-      </h1>
-
-      <ul class="text-gray-400 font-medium text-center lg:text-left">
-        <li>Academy</li>
-        <li>Group Lesson</li>
-        <li>Private Lesson</li>
-        <li>Hockey's for Kid</li>
-        <li>Hockey's for Adult</li>
-      </ul>
     </div>
   </footer>
 </body>
